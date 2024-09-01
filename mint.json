@@ -1,91 +1,126 @@
 {
   "$schema": "https://mintlify.com/schema.json",
-  "name": "Starter Kit",
+  "name": "Pragun's Data Handbook",
   "logo": {
-    "dark": "/logo/dark.svg",
-    "light": "/logo/light.svg"
+    "dark": "/images/logo/logo-with-wordmark-light.svg",
+    "light": "/images/logo/logo-with-wordmark-dark.svg"
   },
-  "favicon": "/favicon.svg",
+  "favicon": "/pb-circle-green.svg",
   "colors": {
-    "primary": "#0D9373",
-    "light": "#07C983",
-    "dark": "#0D9373",
+    "primary": "#1B4546",
+    "light": "#99CA3C",
+    "dark": "#1B4546",
+    "background": {
+      "light": "#FEFFFC"
+    },
     "anchors": {
-      "from": "#0D9373",
-      "to": "#07C983"
+      "from": "#1B4546",
+      "to": "#99CA3C"
     }
   },
   "topbarLinks": [
     {
-      "name": "Support",
-      "url": "mailto:hi@mintlify.com"
+      "name": "About Me",
+      "url": "https://pragunbhutani.com"
+    },
+    {
+      "name": "My Blog",
+      "url": "https://pragunbhutani.substack.com"
     }
   ],
-  "topbarCtaButton": {
-    "name": "Dashboard",
-    "url": "https://dashboard.mintlify.com"
+  "primaryTab": {
+    "name": "Get Started"
   },
   "tabs": [
     {
-      "name": "API Reference",
-      "url": "api-reference"
+      "name": "Analytics Engineering",
+      "url": "analytics-engineering"
+    },
+    {
+      "name": "Product Analytics",
+      "url": "product-analytics"
     }
   ],
   "anchors": [
     {
-      "name": "Documentation",
-      "icon": "book-open-cover",
-      "url": "https://mintlify.com/docs"
+      "name": "About Me",
+      "icon": "user",
+      "url": "https://pragunbhutani.com"
     },
     {
-      "name": "Community",
-      "icon": "slack",
-      "url": "https://mintlify.com/community"
-    },
-    {
-      "name": "Blog",
+      "name": "My Blog",
       "icon": "newspaper",
-      "url": "https://mintlify.com/blog"
+      "url": "https://pragunbhutani.substack.com"
     }
   ],
   "navigation": [
     {
-      "group": "Get Started",
+      "group": "Pragun's Data Handbook",
+      "pages": ["home/introduction"]
+    },
+    {
+      "group": "Common Data Terms",
       "pages": [
-        "introduction",
-        "quickstart",
-        "development"
+        "home/glossary/data-platform",
+        "home/glossary/data-warehouse",
+        "home/glossary/etl-elt-reverse-etl",
+        "home/glossary/product-analytics",
+        "home/glossary/business-intelligence",
+        "home/glossary/data-science-and-ml",
+        "home/glossary/data-catalog"
       ]
     },
     {
-      "group": "Essentials",
+      "group": "Startup Data Journey",
       "pages": [
-        "essentials/markdown",
-        "essentials/code",
-        "essentials/images",
-        "essentials/settings",
-        "essentials/navigation",
-        "essentials/reusable-snippets"
+        "home/data-story/introduction",
+        "home/data-story/pre-seed",
+        "home/data-story/seed",
+        "home/data-story/series-a",
+        "home/data-story/series-b",
+        "home/data-story/series-c-plus"
       ]
     },
     {
-      "group": "API Documentation",
+      "group": "Analytics Engineering",
+      "pages": ["analytics-engineering/introduction"]
+    },
+    {
+      "group": "Good Conventions",
       "pages": [
-        "api-reference/introduction"
+        "analytics-engineering/good-conventions/warehouse-layers",
+        "analytics-engineering/good-conventions/table-names",
+        "analytics-engineering/good-conventions/column-names"
       ]
     },
     {
-      "group": "Endpoint Examples",
+      "group": "DBT Modeling Example",
       "pages": [
-        "api-reference/endpoint/get",
-        "api-reference/endpoint/create",
-        "api-reference/endpoint/delete"
+        "analytics-engineering/modeling-example/introduction",
+        "analytics-engineering/modeling-example/source-data",
+        "analytics-engineering/modeling-example/staging",
+        "analytics-engineering/modeling-example/snapshots",
+        "analytics-engineering/modeling-example/dimensions",
+        "analytics-engineering/modeling-example/facts",
+        "analytics-engineering/modeling-example/conclusion"
+      ]
+    },
+    {
+      "group": "Product Analytics",
+      "pages": [
+        "product-analytics/introduction",
+        "product-analytics/event-design"
       ]
     }
   ],
+  "feedback": {
+    "thumbsRating": true,
+    "raiseIssue": true,
+    "suggestEdit": true
+  },
   "footerSocials": {
-    "x": "https://x.com/mintlify",
-    "github": "https://github.com/mintlify",
-    "linkedin": "https://www.linkedin.com/company/mintsearch"
+    "x": "https://x.com/pragunbhutani",
+    "github": "https://github.com/pragunbhutani",
+    "linkedin": "https://www.linkedin.com/in/pragunbhutani"
   }
 }

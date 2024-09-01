@@ -1,0 +1,151 @@
+---
+title: "Analytics Event Design"
+icon: "pencil"
+---
+
+<Note>
+  This chapter is currently under development. Please check back later for
+  updates.
+</Note>
+
+One of the most important things you can do to ensure that your product analytics is effective is to design
+your analytics events correctly.
+
+In this chapter, we will discuss the key principles of event design and how you can use them to create an
+effective event tracking strategy for your product.
+
+## What are Analytics Events?
+
+Analytics events are user interactions with your product that you track using an analytics tool. These events
+can be anything from clicking a button to making a purchase.
+
+Events are the building blocks of your product analytics. By tracking events, you can understand how users are
+interacting with your product, identify areas for improvement, and measure the impact of changes you make to
+your product.
+
+### Which Events to Track?
+
+When deciding which events to track, there are two key principles you should keep in mind:
+
+#### 1. Be Relevant
+
+Events should be relevant to your business goals. This means that you should only track events that are
+meaningful to your product and your users. For example, if you're building an e-commerce platform, you should
+track events like "product_added_to_cart" and "purchase_completed", but you don't need to track events like
+"page_scrolled" or "item_hovered".
+
+#### 2. Be Actionable
+
+Events should be actionable, meaning that they should provide you with information that you can act on. For
+example, if you track an event like "signup_button_clicked", you can use this information to optimize your
+signup flow and increase the number of signups.
+
+## Event Design Principles
+
+When designing events for your product analytics, there are a few key principles you should keep in mind to
+ensure that your events are effective and useful.
+
+### Event Names
+
+When naming events, use a consistent naming convention to make it easier to analyze and compare events.
+
+#### Use snake_case
+
+You should use snake_case to name your events. This means that you should use lowercase letters and separate
+words with underscores. For example, you should name an event like "product_viewed" instead of "ProductViewed".
+
+In the larger scheme of things, it doesn't matter which case convention you use as long as you're consistent.
+
+I recommend using snake_case because I've found it to be readable, easy to type, and easy to work with in most
+analytics tools and SQL queries.
+
+##### Examples
+
+Good:
+
+- product_viewed
+- purchase_completed
+
+Bad:
+
+- ProductViewed
+- Purchase Completed
+
+#### Use a noun-verb format
+
+When naming events, use a noun-verb format to make it clear what the event represents.
+Here, the noun represents the object or entity that the event is related to, and the verb represents the action
+in past tense.
+
+In case of complex verbs like "Add to cart", you can use a noun-verb-noun format, where the first
+noun represents the subject of the action, the verb represents the action, and the second noun serves
+as a qualifier or descriptor.
+
+##### Examples
+
+Good:
+
+- product_viewed
+- purchase_completed
+- product_added_to_cart
+
+Bad:
+
+- view_product
+- completed_purchase
+- add_product_to_cart
+
+#### Use descriptive names
+
+When naming events, use descriptive names that clearly convey the meaning of the event. This will make it easier
+for you and your team to understand what the event represents and how it should be used.
+
+##### Examples
+
+Good:
+
+- product_viewed
+- purchase_completed
+- product_added_to_cart
+
+Bad:
+
+- view
+- click
+- add_to_cart
+
+### Event Properties
+
+Properties are key-value pairs that provide additional information about the event. For example, you can
+include properties like "product_id" or "category" with a "product_viewed" event to track which product was
+viewed.
+
+Properties should be structured and consistent across events. As a general principle, while an event
+tells you what action was performed, your properties should be able to help you identify the following about an event:
+
+#### Object
+
+The object that the event is related to. For example, in a "product_viewed" event, the object would be the
+product that was viewed. You should include the identifier of the object as a property, as well as any other
+categories or attributes that help describe the object.
+
+#### Location
+
+The location where the event occurred. This could be one or more properties based on the nature of your product.
+You should be able to identify the page or screen where the event occurred, as well as the position within the
+page or screen if relevant.
+
+#### Context & Platform
+
+The context in which the event occurred. This could include information like the user's device, browser, or
+operating system, app version, as well as any other contextual information that might be relevant to the event.
+
+### Footnote: Keep it Simple
+
+While it's important to design a tracking plan that's comprehensive and covers all the cases you need, it's also
+important to keep it simple. The more complex your tracking plan is, the harder it will be to maintain and
+as your company scales.
+
+Remember that whatever event structure you create will have to be taught to new team members constantly, and they'll
+pass this knowledge on to subsequent team members. So, it's important to keep it simple, easy to understand and
+not overly complex.
