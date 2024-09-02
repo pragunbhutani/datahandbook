@@ -5,6 +5,7 @@
     "dark": "/images/logo/logo-with-wordmark-light.svg",
     "light": "/images/logo/logo-with-wordmark-dark.svg"
   },
+  "layout": "topnav",
   "favicon": "/pb-circle-green.svg",
   "colors": {
     "primary": "#1B4546",
@@ -39,18 +40,6 @@
     {
       "name": "Product Analytics",
       "url": "product-analytics"
-    }
-  ],
-  "anchors": [
-    {
-      "name": "About Me",
-      "icon": "user",
-      "url": "https://pragunbhutani.com"
-    },
-    {
-      "name": "My Blog",
-      "icon": "newspaper",
-      "url": "https://pragunbhutani.substack.com"
     }
   ],
   "navigation": [
