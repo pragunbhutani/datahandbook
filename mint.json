@@ -19,6 +19,9 @@
       "to": "#99CA3C"
     }
   },
+  "background": {
+    "style": "grid"
+  },
   "topbarLinks": [
     {
       "name": "About Me",
@@ -40,6 +43,10 @@
     {
       "name": "Product Analytics",
       "url": "product-analytics"
+    },
+    {
+      "name": "Data Infrastructure",
+      "url": "data-infrastructure"
     }
   ],
   "navigation": [
@@ -100,6 +107,30 @@
         "product-analytics/introduction",
         "product-analytics/event-design"
       ]
+    },
+    {
+      "group": "Tracking Plans",
+      "pages": [
+        "product-analytics/tracking-plan/amazon-type",
+        "product-analytics/tracking-plan/netflix-type"
+      ]
+    },
+    {
+      "group": "Data Infrastructure",
+      "pages": ["data-infrastructure/introduction"]
+    },
+    {
+      "group": "Recommended Tools",
+      "pages": [
+        "data-infrastructure/recommended-tools/data-warehouse",
+        "data-infrastructure/recommended-tools/ingestion",
+        "data-infrastructure/recommended-tools/data-modeling",
+        "data-infrastructure/recommended-tools/orchestration",
+        "data-infrastructure/recommended-tools/business-intelligence",
+        "data-infrastructure/recommended-tools/product-analytics",
+        "data-infrastructure/recommended-tools/consumer-data-platform",
+        "data-infrastructure/recommended-tools/reverse-etl"
+      ]
     }
   ],
   "feedback": {
@@ -111,5 +142,13 @@
     "x": "https://x.com/pragunbhutani",
     "github": "https://github.com/pragunbhutani",
     "linkedin": "https://www.linkedin.com/in/pragunbhutani"
+  },
+  "analytics": {
+    "ga4": {
+      "measurementId": "G-JLRSZJQ7MZ"
+    }
+  },
+  "integrations": {
+    "intercom": "sz321lh9"
   }
 }
