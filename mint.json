@@ -117,7 +117,10 @@
     },
     {
       "group": "Data Infrastructure",
-      "pages": ["data-infrastructure/introduction"]
+      "pages": [
+        "data-infrastructure/introduction",
+        "data-infrastructure/starters-guide"
+      ]
     },
     {
       "group": "Recommended Tools",
@@ -135,7 +138,6 @@
   ],
   "feedback": {
     "thumbsRating": true,
-    "raiseIssue": true,
     "suggestEdit": true
   },
   "footerSocials": {
